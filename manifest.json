@@ -1,0 +1,19 @@
+{
+    "name": "RPIES",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Helps make RPI websites look nicer",
+    "page_action": {
+        "default_icon": "icon.png",
+        "default_popup": "rpies.html"
+    },
+    "content_scripts": [ {
+        "css": [ "bootstrap.min.css", "rpies.css" ],
+        "js": [ "jquery.min.js", "bootstrap.min.js", "rpies.js" ],
+        "matches": [ "*://*.rpi.edu/*"]
+    } ],
+    "permissions" : [
+        "activeTab"
+    ],
+    "web_accessible_resources": ["rpiesTitle.html"]
+}
