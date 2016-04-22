@@ -1,13 +1,58 @@
-<div id="rpies-header-section" class="page-header">
+<div class="page-header rpies-header-section">
     <h1>Welcome to SIS <small> Now with a new look</small></h1>
 </div>
-<div id="rpies-body-section">
-    <div class="panel panel-default rpies-body-subsection ">
+<div class="rpies-centered-section">
+    <div class="panel panel-default">
         <div class="panel-heading">
             <h3 class="panel-title">Basic Functions</h3>
         </div>
         <div class="panel-body">
-            <a type="button" class="btn btn-primary btn-lg" href="https://sis.rpi.edu/rss/twbkwbis.P_WWWLogin">Login</a>
+            <div class="rpies-centered-section">
+                <form action="/rss/twbkwbis.P_ValLogin" method="POST" name="loginform">
+                    <div class="input-group">
+                        RIN:
+                        <input type="text" name="sid">
+                    </div>
+                    <div class="input-group">
+                        PIN:
+                        <input type="password" name="PIN">
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Troubleshooting</h3>
+        </div>
+        <div class="panel-body">
+            <div class="list-group">
+                <a href="https://sis.rpi.edu/update.htm" class="list-group-item">System Availability</a>
+                <a href="http://j2ee.rpi.edu/swf/setup.do?target=sis" class="list-group-item">Server Not Responding</a>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Misc</h3>
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <label for="sel1">Select Destination</label>
+                <select class="form-control" id="sel1" onChange="window.location.href=this.value">
+                    <option value=""></option>
+                    <option value="http://provost.rpi.edu/syllabus-display">Online Syllabus Catalog</option>
+                    <option value="https://sis.rpi.edu/rss/yhwwkwags.P_Web_Artic_Guide">Transfer Course Guide</option>
+                    <option value="https://sis.rpi.edu/stuclshr.htm">Topics Courses and New Course Descriptions</option>
+                    <option value="http://srfs.rpi.edu/update.do?artcenterkey=305">Communication Intensive Courses</option>
+                    <option value="http://srfs.rpi.edu/update.do?artcenterkey=208&setappvar=page(1)">Courses which satisfy PDII requirement</option>
+                    <option value="https://sis.rpi.edu/policy.htm">SIS User Responsibility</option>
+                    <option value="http://alac.rpi.edu/setup.do">Academic Advising</option>
+                    <option value="http://srfs.rpi.edu/setup.do">Office of the Registrar</option>
+                    <option value="http://www.rpi.edu/academics/catalog">College Catalog</option>
+                </select>
+            </div>
         </div>
     </div>
 </div>

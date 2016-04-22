@@ -3,7 +3,7 @@
     "version": "1.0",
     "manifest_version": 2,
     "description": "Helps make RPI websites look nicer",
-    "page_action": {
+    "browser_action": {
         "default_icon": "icon.png",
         "default_popup": "rpies.html"
     },

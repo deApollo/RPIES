@@ -1,17 +1,17 @@
-#rpies-header-section {
+.rpies-header-section {
     width: 50%;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
 }
 
-#rpies-body-section {
-    width: 75%;
+.rpies-centered-section {
+    width: 40%;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
 }
 
-.rpies-body-subsection {
-    width: 50%;
+input {
+    margin: 5px;
 }
