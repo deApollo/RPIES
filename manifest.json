@@ -8,12 +8,12 @@
         "default_popup": "rpies.html"
     },
     "content_scripts": [ {
-        "css": [ "bootstrap.min.css", "rpies.css" ],
-        "js": [ "jquery.min.js", "bootstrap.min.js", "rpies.js" ],
+        "css": [ "content_scripts/bootstrap.min.css", "web_res/rpiesTitle.css"],
+        "js": [ "content_scripts/jquery.min.js", "content_scripts/bootstrap.min.js", "content_scripts/rpies.js" ],
         "matches": [ "*://*.rpi.edu/*"]
     } ],
     "permissions" : [
         "activeTab"
     ],
-    "web_accessible_resources": ["rpiesTitle.html"]
+    "web_accessible_resources": ["web_res/*.html", "web_res/*.css"]
 }
