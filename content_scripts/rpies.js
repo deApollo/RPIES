@@ -30,6 +30,14 @@ $(document).ready(function() {
         wipePage("body");
         pageInject("body", "web_res/rpiesStudentMenu.html");
         break;
+    case "Financial Aid":
+        wipePage("body");
+        pageInject("body", "web_res/rpiesFinancialAidMenu.html");
+        break;
+    case "User Logout":
+        wipePage("body");
+        pageInject("body", "web_res/rpiesLogout.html");
+        break;
     default:
         break;
     }
