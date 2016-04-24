@@ -12,6 +12,19 @@
     text-align: center;
 }
 
+.rpies-right-aligned-section {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav_container {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
 input {
     margin: 5px;
 }
